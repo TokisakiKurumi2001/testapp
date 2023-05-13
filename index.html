@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Letter</title>
+    <style>
+      .image-container {
+        display: flex;
+        justify-content: center;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        width: auto\9; /* ie8 */
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image-container">
+      <img src="letter.png" alt="The letter" />
+    </div>
+    <script>
+      str = prompt("Enter the password: ");
+      while (str != "28102021") {
+        alert("The password you enter is incorrect. Please try again.");
+        str = prompt("Enter the password: ");
+      }
+    </script>
+  </body>
+</html>
